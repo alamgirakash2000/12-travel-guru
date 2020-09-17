@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/12-travel-guru/static/css/main.6555cb4b.chunk.css",
-    "main.js": "/12-travel-guru/static/js/main.5fc93586.chunk.js",
-    "main.js.map": "/12-travel-guru/static/js/main.5fc93586.chunk.js.map",
+    "main.css": "/12-travel-guru/static/css/main.823e11ce.chunk.css",
+    "main.js": "/12-travel-guru/static/js/main.a26c6d69.chunk.js",
+    "main.js.map": "/12-travel-guru/static/js/main.a26c6d69.chunk.js.map",
     "runtime-main.js": "/12-travel-guru/static/js/runtime-main.391d0783.js",
     "runtime-main.js.map": "/12-travel-guru/static/js/runtime-main.391d0783.js.map",
-    "static/js/2.22d5ed00.chunk.js": "/12-travel-guru/static/js/2.22d5ed00.chunk.js",
-    "static/js/2.22d5ed00.chunk.js.map": "/12-travel-guru/static/js/2.22d5ed00.chunk.js.map",
+    "static/css/2.bcddf60d.chunk.css": "/12-travel-guru/static/css/2.bcddf60d.chunk.css",
+    "static/js/2.2b8a84eb.chunk.js": "/12-travel-guru/static/js/2.2b8a84eb.chunk.js",
+    "static/js/2.2b8a84eb.chunk.js.map": "/12-travel-guru/static/js/2.2b8a84eb.chunk.js.map",
     "index.html": "/12-travel-guru/index.html",
-    "precache-manifest.d4e9ff98692e7c6318c4b542b55c17fa.js": "/12-travel-guru/precache-manifest.d4e9ff98692e7c6318c4b542b55c17fa.js",
+    "precache-manifest.3656473d930d7f5902f41f752a80e9e4.js": "/12-travel-guru/precache-manifest.3656473d930d7f5902f41f752a80e9e4.js",
     "service-worker.js": "/12-travel-guru/service-worker.js",
-    "static/css/main.6555cb4b.chunk.css.map": "/12-travel-guru/static/css/main.6555cb4b.chunk.css.map",
-    "static/js/2.22d5ed00.chunk.js.LICENSE.txt": "/12-travel-guru/static/js/2.22d5ed00.chunk.js.LICENSE.txt",
+    "static/css/2.bcddf60d.chunk.css.map": "/12-travel-guru/static/css/2.bcddf60d.chunk.css.map",
+    "static/css/main.823e11ce.chunk.css.map": "/12-travel-guru/static/css/main.823e11ce.chunk.css.map",
+    "static/js/2.2b8a84eb.chunk.js.LICENSE.txt": "/12-travel-guru/static/js/2.2b8a84eb.chunk.js.LICENSE.txt",
     "static/media/Logo.png": "/12-travel-guru/static/media/Logo.489a4840.png",
     "static/media/Place.style.css": "/12-travel-guru/static/media/Rectangle 1.32162f64.png",
     "static/media/Rectangle 26.png": "/12-travel-guru/static/media/Rectangle 26.2db84080.png",
@@ -23,8 +25,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.391d0783.js",
-    "static/js/2.22d5ed00.chunk.js",
-    "static/css/main.6555cb4b.chunk.css",
-    "static/js/main.5fc93586.chunk.js"
+    "static/css/2.bcddf60d.chunk.css",
+    "static/js/2.2b8a84eb.chunk.js",
+    "static/css/main.823e11ce.chunk.css",
+    "static/js/main.a26c6d69.chunk.js"
   ]
 }
