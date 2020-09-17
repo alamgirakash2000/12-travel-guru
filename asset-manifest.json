@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/12-travel-guru/static/css/main.823e11ce.chunk.css",
-    "main.js": "/12-travel-guru/static/js/main.a26c6d69.chunk.js",
-    "main.js.map": "/12-travel-guru/static/js/main.a26c6d69.chunk.js.map",
+    "main.js": "/12-travel-guru/static/js/main.609c93e5.chunk.js",
+    "main.js.map": "/12-travel-guru/static/js/main.609c93e5.chunk.js.map",
     "runtime-main.js": "/12-travel-guru/static/js/runtime-main.391d0783.js",
     "runtime-main.js.map": "/12-travel-guru/static/js/runtime-main.391d0783.js.map",
     "static/css/2.bcddf60d.chunk.css": "/12-travel-guru/static/css/2.bcddf60d.chunk.css",
     "static/js/2.2b8a84eb.chunk.js": "/12-travel-guru/static/js/2.2b8a84eb.chunk.js",
     "static/js/2.2b8a84eb.chunk.js.map": "/12-travel-guru/static/js/2.2b8a84eb.chunk.js.map",
     "index.html": "/12-travel-guru/index.html",
-    "precache-manifest.3656473d930d7f5902f41f752a80e9e4.js": "/12-travel-guru/precache-manifest.3656473d930d7f5902f41f752a80e9e4.js",
+    "precache-manifest.120e9216b70353a1a4a902c0bdd3df99.js": "/12-travel-guru/precache-manifest.120e9216b70353a1a4a902c0bdd3df99.js",
     "service-worker.js": "/12-travel-guru/service-worker.js",
     "static/css/2.bcddf60d.chunk.css.map": "/12-travel-guru/static/css/2.bcddf60d.chunk.css.map",
     "static/css/main.823e11ce.chunk.css.map": "/12-travel-guru/static/css/main.823e11ce.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.bcddf60d.chunk.css",
     "static/js/2.2b8a84eb.chunk.js",
     "static/css/main.823e11ce.chunk.css",
-    "static/js/main.a26c6d69.chunk.js"
+    "static/js/main.609c93e5.chunk.js"
   ]
 }
