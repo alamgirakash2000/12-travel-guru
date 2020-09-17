@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "57f6a3cf008d7c471ebf6cb8aa378d1c",
+    "revision": "c25466038b68bffadd5283a7067ef069",
     "url": "/12-travel-guru/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/12-travel-guru/static/css/2.bcddf60d.chunk.css"
   },
   {
-    "revision": "cb7b036624f89e86ba47",
+    "revision": "05b30013dd1d13e74968",
     "url": "/12-travel-guru/static/css/main.823e11ce.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/12-travel-guru/static/js/2.2b8a84eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cb7b036624f89e86ba47",
-    "url": "/12-travel-guru/static/js/main.609c93e5.chunk.js"
+    "revision": "05b30013dd1d13e74968",
+    "url": "/12-travel-guru/static/js/main.64c6d8f6.chunk.js"
   },
   {
     "revision": "938708c6860cd99767d3",
