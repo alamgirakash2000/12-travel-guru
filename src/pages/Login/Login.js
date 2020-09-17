@@ -63,6 +63,7 @@ function Login({ user, setUser, setLogin }) {
         <TextField
           id="standard-basic"
           className="form-control"
+          type="password"
           label="Password"
           name="password"
           onChange={(e) => setPassword(e.target.value)}

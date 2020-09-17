@@ -154,6 +154,7 @@ function SignUp({ user, setUser }) {
               id="standard-basic"
               className="form-control my-2"
               label="Password"
+              type="password"
               name="password"
               onBlur={handleBlur}
               onChange={(e) => setPassword(e.target.value)}
@@ -162,6 +163,7 @@ function SignUp({ user, setUser }) {
 
             <TextField
               id="standard-basic"
+              type="password"
               className="form-control my-2"
               label="Confirm Password"
               name="confirm"
@@ -176,7 +178,7 @@ function SignUp({ user, setUser }) {
             </button>
 
             <p>
-              Already have an account?{" "}
+              Already have an account?
               <Link onClick={(e) => setLogin(false)}> Login </Link>
             </p>
           </form>
