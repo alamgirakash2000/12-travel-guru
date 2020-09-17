@@ -4,12 +4,21 @@
   "private": true,
   "homepage": "https://alamgirakash2000.github.io/12-travel-guru/",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/pickers": "^3.2.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "firebase": "^7.20.0",
     "gh-pages": "^3.1.0",
+    "leaflet": "^1.7.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-leaflet": "^2.7.0",
+    "react-router-animated-switch": "^0.0.5",
+    "react-router-dom": "^5.2.0",
+    "react-router-transition": "^2.0.0",
     "react-scripts": "3.4.3"
   },
   "scripts": {
