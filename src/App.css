@@ -8,10 +8,6 @@
   position: relative;
 }
 
-.switch-wrapper > div {
-  position: absolute;
-}
-
 .submit-button {
   border: none;
   background: #f9a51a;

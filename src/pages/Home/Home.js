@@ -7,6 +7,8 @@ import ReactInterval from "react-interval";
 function Home({ place, setSelectPlace }) {
   const [timeCount, setTimeCount] = useState(0);
 
+  const [allPlaces, setAllPlaces] = useState(places);
+
   setInterval(() => setTimeCount(timeCount + 1), 9000);
 
   useEffect(() => {
@@ -16,6 +18,10 @@ function Home({ place, setSelectPlace }) {
       //changePlace();
     }, 3000);
   }, []);
+
+  useEffect(() => {
+    setAllPlaces([place, ...places.filter((p) => p !== place)]);
+  }, [place]);
 
   const changePlace = () => {
     if (place.id === 2) {
@@ -27,7 +33,7 @@ function Home({ place, setSelectPlace }) {
 
   return (
     <div className="homepage">
-      <ReactInterval timeout={4000} enabled={true} callback={changePlace} />
+      <ReactInterval timeout={5000} enabled={true} callback={changePlace} />
       <div className="overlay d-flex align-items-center justify-content-center">
         <div className="container">
           <div className="row">
@@ -46,7 +52,7 @@ function Home({ place, setSelectPlace }) {
 
             <div className="col-md-7 mt-4">
               <div className="places-container">
-                {places.map((p) => (
+                {allPlaces.map((p) => (
                   <Link
                     to={`place/${p.id}`}
                     onClick={() => setSelectPlace(p)}
