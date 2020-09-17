@@ -30,7 +30,9 @@ function Login({ user, setUser, setLogin }) {
         document.getElementById("errorMessage").innerText = error.message;
       });
     console.log(from.pathname);
-    history.replace(from);
+    if (user.email) {
+      history.replace(from);
+    }
   };
 
   const forgetPassword = async () => {
