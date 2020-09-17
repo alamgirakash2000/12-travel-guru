@@ -1,15 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.style.css";
 import { Link } from "react-router-dom";
 import { places } from "../../FakeData/Places";
+import ReactInterval from "react-interval";
 
 function Home({ place, setSelectPlace }) {
+  const [timeCount, setTimeCount] = useState(0);
+
+  setInterval(() => setTimeCount(timeCount + 1), 9000);
+
   useEffect(() => {
     setSelectPlace(places[0]);
+    setInterval(() => {
+      console.log("you can see me every 3 seconds");
+      //changePlace();
+    }, 3000);
   }, []);
+
+  const changePlace = () => {
+    if (place.id === 2) {
+      setSelectPlace(places[0]);
+    } else {
+      setSelectPlace(places[place.id + 1]);
+    }
+  };
 
   return (
     <div className="homepage">
+      <ReactInterval timeout={4000} enabled={true} callback={changePlace} />
       <div className="overlay d-flex align-items-center justify-content-center">
         <div className="container">
           <div className="row">

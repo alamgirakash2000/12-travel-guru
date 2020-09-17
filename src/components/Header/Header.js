@@ -7,10 +7,18 @@ import { useLocation } from "react-router-dom";
 import { auth } from "../../firebase/Config";
 import { Avatar } from "@material-ui/core";
 
-function Header() {
+function Header({ setUser }) {
   const location = useLocation();
   let condition =
     location.pathname === "/" || location.pathname.includes("place");
+
+  const logout = async () => {
+    await auth
+      .signOut()
+      .then(() => setUser({}))
+      .catch((err) => console.log(err.message));
+  };
+
   return (
     <div className={`container position-fixed fixed-top `}>
       <nav
@@ -69,11 +77,15 @@ function Header() {
             </li>
 
             {auth.currentUser ? (
-              <li className="nav-item ">
+              <li className="nav-item d-flex">
                 <Avatar
                   alt={auth.currentUser.name}
                   src={auth.currentUser.photoURL}
                 />
+
+                <button className="ml-2 login-button" onClick={logout}>
+                  LOGOUT
+                </button>
               </li>
             ) : (
               <li className="nav-item login-button">

@@ -17,7 +17,7 @@ function App() {
   const [selectPlace, setSelectPlace] = useState({});
   return (
     <Router>
-      <Header />
+      <Header setUser={setUser} />
       <AnimatedSwitch
         atEnter={{ opacity: 0 }}
         atLeave={{ opacity: 0 }}
