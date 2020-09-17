@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Place.style.css";
-
 import { places } from "../../FakeData/Places";
 import { useParams, useHistory } from "react-router-dom";
 
-function Place() {
+function Place({ setFromDate, setToDate }) {
   const id = useParams().placeId;
   const [place, setPlace] = useState({});
   const history = useHistory();
@@ -46,12 +45,20 @@ function Place() {
                   <div className="d-flex justify-content-between">
                     <div className="my-2">
                       <label htmlFor="">From</label>
-                      <input type="date" className="form-control" />
+                      <input
+                        type="date"
+                        onChange={(e) => setFromDate(e.target.value)}
+                        className="form-control"
+                      />
                     </div>
                     <div className="my-2 ml-3">
                       <label htmlFor="">To</label>
 
-                      <input type="date" className="form-control" />
+                      <input
+                        type="date"
+                        onChange={(e) => setToDate(e.target.value)}
+                        className="form-control"
+                      />
                     </div>
                   </div>
 

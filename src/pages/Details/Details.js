@@ -5,14 +5,21 @@ import DetailsComponent from "../../components/DetailsComponent/DetailsComponent
 import { useParams } from "react-router-dom";
 import { places } from "../../FakeData/Places";
 import MapCompo from "../../components/Map/MapCompo";
+import moment from "moment";
 
-function Details() {
+function Details({ user, fromDate, toDate }) {
   const id = useParams().placeId;
   const place = places[id];
+  const date = moment().format("Do MMM");
+
   return (
     <div className="container details">
       <div className="row flex-column">
-        <p className="m-0">252 stays sep 10-13 3 guests</p>
+        <p className="m-0">
+          <strong>{user.displayName}</strong> will stay from{" "}
+          <strong>{fromDate || date}</strong> to{" "}
+          <strong>{toDate || "(Not selected)"}</strong> with 3 guests
+        </p>
         <h2 className="m-0">Stay in {place?.name}</h2>
       </div>
 

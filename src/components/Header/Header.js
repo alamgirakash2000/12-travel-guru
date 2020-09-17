@@ -79,7 +79,7 @@ function Header({ setUser }) {
             {auth.currentUser ? (
               <li className="nav-item d-flex">
                 <Avatar
-                  alt={auth.currentUser.name}
+                  alt={auth.currentUser.displayName}
                   src={auth.currentUser.photoURL}
                 />
 

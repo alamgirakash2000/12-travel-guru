@@ -25,14 +25,11 @@ function Login({ user, setUser, setLogin }) {
       .then((res) => {
         let tempUser = auth.currentUser;
         setUser(tempUser);
+        history.replace(from);
       })
       .catch(function (error) {
         document.getElementById("errorMessage").innerText = error.message;
       });
-    console.log(from.pathname);
-    if (user.email) {
-      history.replace(from);
-    }
   };
 
   const forgetPassword = async () => {

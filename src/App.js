@@ -5,7 +5,6 @@ import { auth } from "./firebase/Config";
 import { HashRouter as Router, Route } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
 import Home from "./pages/Home/Home";
-import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import Place from "./pages/Place/Place";
 import Details from "./pages/Details/Details";
@@ -15,6 +14,10 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 function App() {
   const [user, setUser] = useState({});
   const [selectPlace, setSelectPlace] = useState({});
+
+  const [fromDate, setFromDate] = useState();
+  const [toDate, setToDate] = useState();
+
   return (
     <Router>
       <Header setUser={setUser} />
@@ -31,10 +34,10 @@ function App() {
           <SignUp user={user} setUser={setUser} />
         </Route>
         <Route path="/place/:placeId">
-          <Place />
+          <Place setFromDate={setFromDate} setToDate={setToDate} />
         </Route>
         <PrivateRoute user={user} path="/details/:placeId">
-          <Details />
+          <Details user={user} fromDate={fromDate} toDate={toDate} />
         </PrivateRoute>
       </AnimatedSwitch>
     </Router>

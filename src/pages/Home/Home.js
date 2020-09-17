@@ -5,18 +5,10 @@ import { places } from "../../FakeData/Places";
 import ReactInterval from "react-interval";
 
 function Home({ place, setSelectPlace }) {
-  const [timeCount, setTimeCount] = useState(0);
-
   const [allPlaces, setAllPlaces] = useState(places);
-
-  setInterval(() => setTimeCount(timeCount + 1), 9000);
 
   useEffect(() => {
     setSelectPlace(places[0]);
-    setInterval(() => {
-      console.log("you can see me every 3 seconds");
-      //changePlace();
-    }, 3000);
   }, []);
 
   useEffect(() => {
